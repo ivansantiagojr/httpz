@@ -59,7 +59,7 @@ static int l_http_get(lua_State *L) {
     curl_global_cleanup();
 
     lua_newtable(L);
-    lua_pushstring(L, "response");
+    lua_pushstring(L, "body");
     lua_pushstring(L, response_body.string);
     lua_settable(L, -3);
 

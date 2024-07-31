@@ -6,7 +6,7 @@ My goal is to get to know more about Systems Programming languages and low level
 Besides that, there are some projects I would like to build in lua (yes, using it as a standalone language), and I did not find a http client library simple enough to use, that's where I saw to opportunity to build my own inspired by the Python's [httpx](https://www.python-httpx.org/) interface.
 
 ## building
-> pre-requisite: having Zig 0.13.0, Lua 5.4 installed and libcurl installed
+> pre-requisite: having Zig 0.13.0, Lua 5.4 and libcurl installed
 In order to build this library, just clone it:
 ```sh
 git clone https://github.com/ivansantiagojr/httpz.git
@@ -38,7 +38,7 @@ local httpz = require("httpz")
 
 local response = httpz.get("https://example.com")
 print(response.status_code)
-print(response.json)
+print(response.body)
 ```
 
 The code above is also on `example/get.lua`, you can run the following command from the httpz directory:
