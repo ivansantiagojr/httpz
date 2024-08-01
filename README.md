@@ -36,7 +36,7 @@ Now, you can use it from Lua:
 ```lua
 local httpz = require("httpz")
 
-local response = httpz.get("https://example.com")
+local response = httpz.get("https://httpbin.org/get")
 print(response.status_code)
 print(response.body)
 ```
@@ -58,7 +58,7 @@ I want this project to be useful, but my main goal is to learn in the process of
 
 ## Obs
 
-I think there is no way in Zig to name the .so file however we want in build.zig: [reference](https://github.com/ziglang/zig/issues/2231:w
+I think there is no way in Zig to name the .so file however we want in build.zig: [reference](https://github.com/ziglang/zig/issues/2231
 ).
 
-Is there a way using the [lua-language-server](https://github.com/LuaLS/lua-language-server) to write the type definitions and stuff for this lib? I do not know, will still search for it.
+Is there a way to use the [lua-language-server](https://github.com/LuaLS/lua-language-server) to write the type definitions and stuff for this lib? I do not know, will still search for it.
