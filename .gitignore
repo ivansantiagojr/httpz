@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c,zig
-# Edit at https://www.toptal.com/developers/gitignore?templates=c,zig
+# Created by https://www.toptal.com/developers/gitignore/api/c,zig,lua
+# Edit at https://www.toptal.com/developers/gitignore?templates=c,zig,lua
 
 ### C ###
 # Prerequisites
@@ -55,6 +55,33 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+### Lua ###
+# Compiled Lua sources
+luac.out
+
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# Object files
+*.os
+
+# Precompiled Headers
+
+# Libraries
+*.def
+
+# Shared objects (inc. Windows DLLs)
+
+# Executables
+
+# luarocks
+lua
+luarocks
+.luarocks/
+
+
 ### zig ###
 # Zig programming language
 
@@ -64,4 +91,5 @@ build/
 build-*/
 docgen_tmp/
 
-# End of https://www.toptal.com/developers/gitignore/api/c,zig
+# End of https://www.toptal.com/developers/gitignore/api/c,zig,lua
+
