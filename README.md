@@ -7,6 +7,7 @@ Besides that, there are some projects I would like to build in lua (yes, using i
 
 ## building
 > pre-requisite: having Zig 0.13.0, Lua 5.4 and libcurl installed
+
 In order to build this library, just clone it:
 ```sh
 git clone https://github.com/ivansantiagojr/httpz.git
@@ -49,8 +50,8 @@ lua examples/get.lua
 useful links and sources that helped me:
 - how to use curl YouTube playlist (I got the write_data function from here): [link](https://youtube.com/playlist?list=PLA1FTfKBAEX6p-lfk1l_Q2zh2E5wd-cup&si=-FO9rDDavFVTE5H_)
 - using curl from Zig: [link](https://ziglang.org/learn/samples/#using-curl-from-zig)
-- zig as a C compiler: [link](https://ziglang.org/learn/overview/#zig-is-also-a-c-compiler)
-- the book Programmin in Lua, fourt edition, is teaching a lot of C and Lua.
+- Zig as a C compiler: [link](https://ziglang.org/learn/overview/#zig-is-also-a-c-compiler)
+- the book Programming in Lua, fourth edition, is teaching me a lot of C and Lua.
 - how to setup the `build.zig` for C projects: [link](https://www.reddit.com/r/Zig/comments/1cjtcc9/zig_013_fail_to_build_c_file/)
 
 # Contributing
