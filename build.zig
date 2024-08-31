@@ -10,11 +10,23 @@ pub fn build(b: *std.Build) void {
         .optimize = optimize,
     });
 
-    lib.linkSystemLibrary("lua");
-    lib.linkSystemLibrary("curl");
-    lib.addCSourceFile(.{ .file = .{
-        .src_path = .{ .owner = b, .sub_path = "httpz.c" },
-    } });
+    const curl_dep = b.dependency("curl", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    const lua_dep = b.dependency("lua", .{
+        .target = target,
+        .optimize = optimize,
+    });
+    lib.addIncludePath(curl_dep.path("include"));
+    lib.addIncludePath(lua_dep.path(""));
 
+    lib.addCSourceFile(.{
+        .file = .{
+            .src_path = .{ .owner = b, .sub_path = "httpz.c" },
+        },
+    });
+
+    lib.linkLibC();
     b.installArtifact(lib);
 }
