@@ -23,6 +23,6 @@ pub fn build(b: *std.Build) void {
         },
     });
     lib.linkLibC();
-    b.installArtifact(lib);
     b.installArtifact(lua_lib);
+    b.installArtifact(lib);
 }
