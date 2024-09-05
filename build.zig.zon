@@ -24,12 +24,8 @@
     // internet connectivity.
     .dependencies = .{
         .lua = .{
-            .url = "https://www.lua.org/ftp/lua-5.4.7.tar.gz",
-            .hash = "12206df90729936e110f5d2574437be370fc4367b5f44afcc77749ac421547bc8ff0",
-        },
-        .curl = .{
-            .url = "https://github.com/curl/curl/releases/download/curl-8_9_1/curl-8.9.1.tar.gz",
-            .hash = "1220f36375f7a423b8dc41b14612d685f48e030b25d0f6eb69011179e9b68e4584e0",
+            .url = "https://github.com/allyourcodebase/lua/archive/refs/tags/5.4.7.tar.gz",
+            .hash = "12201c8f23bf5ea3a44e5895b1ab0979da113be695b5caa32341358defe351891797",
         },
     },
     .paths = .{
