@@ -16,6 +16,7 @@ pub fn build(b: *std.Build) void {
     });
     const lua_lib = lua_dep.artifact("lua");
 
+    lib.linkLibrary(lua_lib);
     lib.linkSystemLibrary("curl");
     lib.addCSourceFile(.{
         .file = .{
@@ -23,6 +24,5 @@ pub fn build(b: *std.Build) void {
         },
     });
     lib.linkLibC();
-    b.installArtifact(lua_lib);
     b.installArtifact(lib);
 }
