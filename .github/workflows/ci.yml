@@ -17,10 +17,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Set up LLVM and Clang
+      - name: Set up LLVM and Clang and curl
         run: |
           sudo apt-get update
-          sudo apt-get install -y lld llvm llvm-dev clang
+          sudo apt-get install -y lld llvm llvm-dev clang libcurl4-openssl-dev
 
       - name: Set up Zig
         uses: mlugg/setup-zig@v1
